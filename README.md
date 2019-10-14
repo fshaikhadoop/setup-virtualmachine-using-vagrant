@@ -44,19 +44,19 @@ After the completion of vagrant intalltion now we can proceed with setup of cent
 
 --> Once the download completes, copy the .box file the created vagrant folder or u can download the .box file directly into that folder.   
    
-   $mv /home/user/Downloads/****.box /data/centos7/
+     $mv /home/user/Downloads/****.box /data/centos7/
 
 
 --> Now open the terminal and go to the folder of the vagrant box.
    
-   $cd /data/centos7
+     $cd /data/centos7
 
 
 Now add the box to vagrant by using below command
    
-   $vagrant box add <boxname>.box --name centos7  
+     $vagrant box add <boxname>.box --name centos7  
     
-    ### --name tag is used to recognize the vagrnat box easily. u can replace name centos7 with any name u want.
+   ### --name tag is used to recognize the vagrnat box easily. u can replace name centos7 with any name u want.
 
 
 -->once it is successfully add u will get the message " the box is successfully added to libvirt " <<if u r using virualbox then u will see the message as " the box is successfully added to vitualbox " 
@@ -64,7 +64,7 @@ Now add the box to vagrant by using below command
 
 -->Now we have to initialize the vagrant box by using 
   
-  $vagrant init
+    $vagrant init
   
   once the initiaization is done, corresponding "Vagrantfile" will be created in the directory.
 
