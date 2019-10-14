@@ -70,9 +70,9 @@ After the completion of vagrant intalltion now we can proceed with setup of cent
 -->  Edit the vagrant file as per ur requirement using any editor and save the changes
 
       Vagrant.configure("2") do |config|  #<< specigies configuration >>
-      config.vm.box = "centos/7"          #<< specify the vagrant box name u have given >>
-      config.vm.hostname= "centos7.itversity.com" #<< specify the hostname u want to use for vm >>
-      config.vm.network "private_network", ip: "192.168.33.10" #<< configure the ip address >>
+      config.vm.box = "centos7"          #<< specify the vagrant box name u have given >>
+      config.vm.hostname= "centos7.vagrantvm.com" #<< specify the hostname u want to use for vm >>
+      config.vm.network "private_network", ip: "192.168.121.10" #<< configure the ip address >>
       config.vm.provider "libvirt" do |lvm|  #<< specify the vm provider libvirt or virtualbox >>
       #If u want to customize the allocation of  memory , storage and cpus u can specify as below
       # Customize Memory, CPUs and Storage
